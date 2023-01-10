@@ -60,8 +60,8 @@ all: main-build
 main-build: STM32F103_EEPROM.elf secondary-outputs
 
 # Tool invocations
-STM32F103_EEPROM.elf STM32F103_EEPROM.map: $(OBJS) $(USER_OBJS) C:\Users\KEOHDURGUT\STM32CubeIDE\workspace_1.10.0\STM32F103_EEPROM\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32F103_EEPROM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\KEOHDURGUT\STM32CubeIDE\workspace_1.10.0\STM32F103_EEPROM\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103_EEPROM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32F103_EEPROM.elf STM32F103_EEPROM.map: $(OBJS) $(USER_OBJS) C:\Users\KEOHDURGUT\Documents\GitHub\STM32_EEPROM_read_and_write\STM32F103_EEPROM\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32F103_EEPROM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\KEOHDURGUT\Documents\GitHub\STM32_EEPROM_read_and_write\STM32F103_EEPROM\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103_EEPROM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

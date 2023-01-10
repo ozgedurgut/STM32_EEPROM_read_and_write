@@ -45,7 +45,7 @@ uint8_t mode1=0;
 uint8_t mode2=0;
 uint8_t mode3=0;
 uint8_t mode4=0;
-uint8_t read1,read2,read3,read4;
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -118,7 +118,6 @@ int main(void)
 		HAL_Delay(10);
 		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
 		HAL_Delay(10);
-
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
 		dataR[2]=dataRead[2];
@@ -137,14 +136,12 @@ int main(void)
 		dataR[3]=dataRead[3];
 		HAL_Delay(1000);
 
-
 		mode3=1;
 		dataWrite[2]=mode3;
 		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
 		HAL_Delay(10);
 		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
 		HAL_Delay(10);
-
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
 		dataR[2]=dataRead[2];
@@ -187,7 +184,6 @@ int main(void)
 		dataR[3]=dataRead[3];
 		HAL_Delay(1000);
 
-
 		mode3=0;
 		dataWrite[2]=mode3;
 		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
@@ -211,7 +207,6 @@ int main(void)
 		dataR[2]=dataRead[2];
 		dataR[3]=dataRead[3];
 		HAL_Delay(1000);
-
 	}
 	/* USER CODE END 3 */
 }
