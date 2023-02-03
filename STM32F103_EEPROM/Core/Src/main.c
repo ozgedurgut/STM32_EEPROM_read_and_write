@@ -21,7 +21,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "EEPROM.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -30,7 +29,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 #define DEV_ADDR 0xA0
-volatile uint8_t dataWrite[4];
+uint8_t dataWrite[4];
 uint8_t dataRead[4];
 uint8_t dataR[4];
 /* USER CODE END PTD */
