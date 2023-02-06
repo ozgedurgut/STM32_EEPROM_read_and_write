@@ -113,9 +113,9 @@ int main(void)
 
 		mode1=1;
 		dataWrite[0]=mode1;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -125,9 +125,9 @@ int main(void)
 
 		mode2=1;
 		dataWrite[1]=mode2;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -137,9 +137,9 @@ int main(void)
 
 		mode3=1;
 		dataWrite[2]=mode3;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -149,9 +149,9 @@ int main(void)
 
 		mode4=1;
 		dataWrite[3]=mode4;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -161,9 +161,9 @@ int main(void)
 
 		mode1=0;
 		dataWrite[0]=mode1;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -173,9 +173,9 @@ int main(void)
 
 		mode2=0;
 		dataWrite[1]=mode2;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -185,9 +185,9 @@ int main(void)
 
 		mode3=0;
 		dataWrite[2]=mode3;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
@@ -197,9 +197,9 @@ int main(void)
 
 		mode4=0;
 		dataWrite[3]=mode4;
-		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),4,dataWrite,4, 20);
+		HAL_I2C_Mem_Write(&hi2c2, DEV_ADDR, (3<<6),8,dataWrite,4, 20);
 		HAL_Delay(10);
-		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),4,dataRead,4, 20);
+		HAL_I2C_Mem_Read(&hi2c2, DEV_ADDR, (3<<6),8,dataRead,4, 20);
 		HAL_Delay(10);
 		dataR[0]=dataRead[0];
 		dataR[1]=dataRead[1];
